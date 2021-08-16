@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  
+ 
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: url(https://images.pexels.com/photos/3985170/pexels-photo-3985170.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  
+}
+
+input {
+  flex: none;
+}
+
+form {
+  background-color: white;
+  padding: 40px 40px 40px 40px;
+  max-width: 700px;
+  border-radius: 12px;
+}
+
+label.idle {
+  display: block;
+}
+
+#name,
+#email, 
+#number, 
+#city,
+select,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.input-textarea {
+  min-height: 80px;
+  padding: 0.625rem;
+  resize: vertical;
+  border-radius: 15px;
+  width: 97%;
+  
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: .5rem 3rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  border-radius: 6px;
+  border-width: thin;
+}
+
+.submit-button:hover {
+  box-shadow: none;
+  color: white;
+}
+   
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+#title, #description {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
+  
+}
+
+#description{
+  margin-bottom: 1rem
+}
